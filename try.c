@@ -1,21 +1,27 @@
 
 #include <stdio.h>
- 
 
-int main()
-{
-int x , y , i , e;
- printf("enter the no \n");
- scanf("%d",&x);
- 
- printf("enter the no the limit you want to multiply \n");
- scanf("%d",&y);
-printf("the no which is multiply is %d \nthe limit of multiply is  %d \n",x,y);
- printf("your ans is \n");
+int main(){
+    int a , b, c, d ,e , f , g;
+    printf("enter yout salary \n");
+    scanf("%d",&a);
 
- for(i=1;i<=y; i++){
-    e = x*i;
-    printf("%d x %d = %d\n",x,i,e);
- }
-    
+    c = a/100*15;
+    d = a/100*10;
+    e = a/100*8;
+    f = a/100*5;
+
+    if(a>10000){
+    b = a/100*38;
+    g = a+b;
+    printf("your tax is    %d \n",f);
+    }
+    else{
+        b = a/100*33;
+        g = a +b;
+    }
+    printf("your DA is     %d \n",c);
+    printf("your HRA is    %d \n",d);
+    printf("your TA is     %d \n",e);
+    printf("your total salary is \n %d",g);
 }
